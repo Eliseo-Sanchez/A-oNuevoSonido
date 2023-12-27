@@ -1,0 +1,169 @@
+/* --------------------------- HEADER  -------------------  */
+
+header {
+  text-align: center;
+  background-image: url(/imagenes/fondoheader.gif);
+  background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.headerlogo {
+  width: 400px;
+  margin: 10px;
+  z-index: 2;
+}
+
+/* ---------------------- AJUSTAR TAMAÑO DE PÁGINA -------------------  */
+
+html, body {
+  height: 100%;
+}
+
+main {
+  height: 78%;
+}
+
+/* --------------------------- MAIN  -------------------  */
+
+main {
+  background-image: url(/imagenes/fondocopas.avif);
+  background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.logosonido, .felizanho, .lesdesea {
+  text-align: center;
+}
+
+.logosonido img {
+  width: 70%;
+  margin: 70px 0 20px 0;
+  animation: crecerYEncoger 2s ease-in-out infinite;
+}
+
+.lesdesea img {
+  width: 45%;
+}
+
+.luces {
+  position: absolute;
+  left: 30%;
+  top: 4.5%;
+}
+
+.luces img {
+  width: 57%;
+  z-index: 1;
+}
+
+/* --------------------------- TEXTO  -------------------  */
+
+.texto {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.txt1 { color: #0082c8; }
+.txt2 { color: pink; }
+.txt3 { color: green; }
+.txt4 { color: #11998e; }
+.txt5 { color: white; }
+
+.texto p {
+  margin: 10px;
+}
+
+/* -------------------- REDES SOCIALES  -------------------  */
+
+.titulo {
+  text-align: center;
+  animation: cambioColor 1s linear infinite, giro 2s linear infinite;
+  font-size: 60px;
+  margin: 30px 0 10px 0;
+  font-weight: bold;
+}
+
+@keyframes cambioColor {
+  0% {
+  color: red;
+  }
+  25% {
+    color: orange;
+  }
+  50% {
+    color: yellow;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+@keyframes giro {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+
+
+/* -------------------- REDES SOCIALES  -------------------  */
+
+.redes {
+  width: 11%;
+  margin: 10px;
+}
+
+.redessociales li {
+  display: inline;
+}
+
+.redessociales {
+  text-align: center;
+}
+
+/* ------------------------- PIE  -------------------  */
+
+footer {
+  text-align: center;
+  /*background: linear-gradient( #bdc3c7, #2c3e50); */
+  background-image: url(/imagenes/fondofooter.gif);
+  background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  padding: 20px;
+}
+
+.footerlogo {
+  height: 150px
+}
+
+footer p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*------------------------  CELULARES --------------------------------*/
+
+@keyframes crecerYEncoger {
+  0% {
+    transform: scale(1); /* Tamaño original */
+  }
+  50% {
+    transform: scale(1.1); /* Crecer al 110% del tamaño original */
+  }
+  100% {
+    transform: scale(1); /* Volver al tamaño original */
+  }
+}
